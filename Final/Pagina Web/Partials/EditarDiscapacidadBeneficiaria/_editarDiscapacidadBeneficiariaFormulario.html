@@ -1,0 +1,58 @@
+
+
+  <div  class="teal lighten-5" >
+    <div class="tab">
+      <h4>Discapacidad</h4>
+      <div class='row'>
+        <div class="col s12">
+          <!--Element-->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <?=crear_selectR("idDiscapacidad", "Nombre", "Discapacidad",$discapacidad_id);?>  
+            </div>
+          </div>
+              <!--Element-->
+          <br>
+          <div id= "discapacidadBeneficiariaForm">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab">
+      <div class="row">
+        <!--Element-->
+        <div class="col s12">
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <?=fechaCamp("idDiscapacidadBeneficiaria","DiscapacidadBeneficiaria",$relacion_id,"fecha","diagnosticado");?> 
+            </div>
+          </div>
+        </div>
+            <!--Element-->
+        <div class="file-field input-field">
+          <div class="input-field col s12">
+            <?=textCamp("idDiscapacidadBeneficiaria","DiscapacidadBeneficiaria",$relacion_id,"Tratamiento");?> 
+    
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <a type="button" id="volverBtn" href="consultarDiscapacidad.php" class="waves-effect green lighten-3 btn ">Volver<i class="material-icons right">undo</i></a>
+        <button type="button" class="waves-effect green lighten-3 btn " id="prevBtn" onclick="nextPrev(-1)">Previo<i class='material-icons right'>arrow_back</i></button>
+        <button type="button" class="waves-effect waves-light btn " id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+</div>
+</div>
+</div> 

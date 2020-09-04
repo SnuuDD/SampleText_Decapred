@@ -1,0 +1,67 @@
+
+
+<div class="card teal lighten-2">
+  <div class="card-content teal lighten-3">
+    <div class=" center" data-indicators="true">
+        <form id="regForm" action="Controladores\DiscapacidadBeneficiaria\controladorAltaDiscapacidadBeneficiaria.php" method="post">
+          <div  class="teal lighten-5" >
+          <div class="tab">
+            <h4>Discapacidad</h4>
+            <div class='row'>
+              <div class="col s12">
+                    <!--Element-->
+                <div class="file-field input-field">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix"> </i>
+                    <?=crear_selectR("idDiscapacidad", "Nombre", "Discapacidad");?>  
+                  </div>
+                </div>
+                    <!--Element-->
+                <br>
+                <div id= "discapacidadBeneficiariaForm">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <div class='row'>
+                              <!--Element-->
+                <div class="col s12">
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <input type="date" name="fecha" id="fecha">
+                      <label for="rol"><strong>Fecha cuando se diagnostico:</strong></label>     
+                    </div>
+                  </div>
+                </div>
+                    <!--Element-->
+                <div class="file-field input-field">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix"> </i>
+                    <div>
+                      <label for="rol"><strong>Tratamiento</strong></label>     
+                    </div>
+                  <textarea required name="tratamiento"wrap rows="10" cols="30"></textarea>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <a type="button" id="volverBtn" href="consultarDiscapacidad.php" class="waves-effect green lighten-3 btn ">Volver<i class="material-icons right">undo</i></a>
+              <button type="button" class="waves-effect green lighten-3 btn " id="prevBtn" onclick="nextPrev(-1)">Previo<i class='material-icons right'>arrow_back</i></button>
+              <button type="button" class="waves-effect waves-light btn " id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+            </div>
+          </div>
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </form>
+    </div>
+  </div>
+</div> 
+
+

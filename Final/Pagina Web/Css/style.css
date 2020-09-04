@@ -1,0 +1,428 @@
+
+
+@media only screen and (min-width : 992px) {
+  .invesible-top {
+    top: 65px;
+  }
+}
+
+
+#perfil {
+  width: 1.8em;
+  height: 1.8em;
+  position:absolute;
+  right:1.3em;
+}
+#login{
+background-color:#005959;
+}
+
+#perfilazo{
+  position:relative;
+}
+#titulo{
+ text-align: center;
+
+}#textoX{
+ color:#fff;
+
+}
+
+/* Carousel*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.middle-indicator{
+   position:absolute;
+   top:50%;
+   }
+  .middle-indicator-text{
+   font-size: 4.2rem;
+  }
+  a.middle-indicator-text{
+    color:white !important;
+  }
+.content-indicator{
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+  }
+    .indicators{
+  	visibility: hidden;
+  }
+
+  #carousel-Docs {
+    width: 100%;
+    height: 200px;
+
+}
+
+#Docs-Benefi {
+  width: 100%;
+  height: 630px;
+
+}
+
+#diagForm {
+  width: 100%;
+  height: 795px;
+
+}
+.carousel {
+  width: 100%;
+  height: 500px;
+  border: #555 2px;
+
+}
+
+
+/* Carousel */
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+
+body {
+  background-color: #f1f1f1;
+}
+
+
+
+h1 {
+  text-align: center;  
+}
+
+
+
+
+
+
+
+
+
+
+#custom-control-label {
+  color: white;
+}
+
+#owo {
+  padding-left: 250px;
+}
+
+.steps{
+    text-align:center;
+    margin-top:40px;
+}
+
+.footform{
+    overflow:auto;
+}
+.botonesform{
+    float:right;
+}
+
+
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#modal2 .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+#modal2 .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#modal2 #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+#modal2 .modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*****Files pdf image **/
+
+
+/* resize images */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/***** Scrol bar**/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c7c7c707; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.modal {
+  max-height: 40%;
+  width: 35%;
+}
+
+.formato1{
+  padding-left: 5%;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.formato2{
+  padding-left: 0%;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.selectI{
+  padding-left: 17%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.selectINombre{
+  padding-left: 17%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+
+select[required]:focus{
+  outline: none !important;
+}
+
+select[required]{
+  display: block;
+  padding: 0;
+  position: absolute;
+  background: transparent;
+  color: transparent;
+  border: none;
+  top: 0;
+}
+
+#mas{
+  padding-top: 25px;
+}
+
+.especialidadS{
+  padding-left: 45px;
+}
+.contact-form input { width: 470px; }
+.contact-form textarea { resize: vertical; width: 470px; }
+textarea {
+  width: 300px;
+  height: 200px;
+}
+
+.formatoE{
+  padding-left: 9%;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.formatoText{
+  padding-left: 0%;
+  padding-bottom: 70px;
+  font-size: 50px;
+}
+
+.botonesE{
+  padding-bottom: 15px;
+}
+
+.selectP{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.selectPNombre{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mark input boxes that gets an error on validation: */
+select.invalid {
+  background-color: #ffdddd;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}

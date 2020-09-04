@@ -1,0 +1,107 @@
+<br>
+<div class="card teal lighten-2">
+<div class="card-content teal lighten-3">
+<div class=" center" data-indicators="true">
+  
+  
+  <form action="Controladores\Receta\controladorAltaReceta.php" method="POST">
+  <div class=" teal lighten-5 " href="#one!" >
+    <div class='row'>
+    <div class="col s12 align-center">
+        <!-- Elemento -->
+        <div class="row">
+        <div class="file-field input-field">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <?php echo selectMedicamentos("");?>
+            <label for="rol"><strong>Medicamento</strong></label>     
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="file-field input-field">
+          <div class="input-field col s6">
+            <i class="material-icons prefix"> </i>
+            <input type="date" name="fechaI">
+            <label for="rol"><strong>Fecha de Inicio:</strong></label>     
+        </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="input-field col s6">
+            <i class="material-icons prefix"> </i>
+            <input type="date" name="fechaF">
+            <label for="rol"><strong>Fecha de Termino:</strong></label>     
+        </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="input-field col s6">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Indicaciones" name="indicaciones" type="text" class="validate">
+              <label for="rol"><strong>Indicaciones</strong></label>     
+          </div>
+          </div>
+          <div class="file-field input-field">
+            <div class="input-field col s6">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Ej. 500 mg" name="dosis" type="text" class="validate">
+              <label for="rol"><strong>Dosis</strong></label>     
+          </div>
+          </div>
+          </div>
+        <div class="file-field input-field">
+          <div class="input-field col s12 l12 left">
+            <button class="waves-effect waves-light btn right" type="submit" name="action">Registrar
+              <i class="material-icons right">add</i>
+            </button>
+            <a title="volver" id="" href="./consultarRecetas.php?ingreso_id=<?php echo $_SESSION["ingreso_id"];?>"         
+            class="waves-effect green lighten-3 btn right">Volver<i class="material-icons right">undo</i>
+            </a>
+        </div>
+        </div>
+        
+      
+      </div>
+
+
+    
+  </div>
+  
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+  <!--  PANELES SIGUIENTES PARA USARSE EN LOS IGUIENTES FORMULARIOS DE SER NECESARIO UNU
+  
+  <div class="carousel-item green white-text" href="#three!">
+      <h2> 3 Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+  </div>
+  <div class="carousel-item blue white-text" href="#four!">
+      <h2> 4 Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+  </div>
+  -->
+<!--
+<script>
+ $(document).ready(function () {
+    $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({ fullWidth: true , noWrap: true});
+    $('.slide-prev').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev')
+    });
+    $('.slide-next').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next')
+    });
+ 
+});
+  </script>
+  -->

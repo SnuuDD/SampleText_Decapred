@@ -1,0 +1,47 @@
+<body id="login">
+    <header>
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a class="brand-logo center"><img class="responsive-img" src="Image/logo_interna.png" alt="Logo needed"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="container" >
+            <br><br><br><br>
+            <div class="row ">
+                <div class="col s8 offset-s2">
+                    <div class="card teal lighten-2">
+                        <div class="card-content teal lighten-5 hoverable">
+                            <span class="card-title center"><h4>Ingresa al sistema</h4></span>
+                            <br>
+                            <form  method="POST" action="Controladores/Login/controladorLogin.php">
+                                <div class="row">
+                                    <div class="input-field col s10 offset-s1">
+                                        <i class="material-icons prefix">email</i>
+                                        <input placeholder="Nombre de Usuario" id="user" name="user" type="text" class="validate" required>
+                                        <label for="text">Nombre de usuario</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s10 offset-s1">
+                                        <i class="material-icons prefix">visibility_off</i>
+                                        <input placeholder="Contraseña" id="pwd" name="pwd" type="password" required>
+                                        <label for="password">Contraseña</label>
+                                    </div>
+                                </div>
+
+                                <input id="iniciosesion" type="submit" value="Ingresar" class="waves-effect waves-light btn" >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    M.AutoInit();
+</script>
+</body>

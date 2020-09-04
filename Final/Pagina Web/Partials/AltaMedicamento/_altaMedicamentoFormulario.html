@@ -1,0 +1,54 @@
+<br>
+<div class="card teal lighten-2">
+<div class="card-content teal lighten-3">
+<div class=" center" data-indicators="true">
+
+  <div class=" teal lighten-5 " href="#one!">
+    <div class='row'>
+        <div class="col s12 align-center">
+      <form action="Controladores\Medicamento\controladorAltaMedicamento.php" method="POST">
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s8">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Paracetamol" type="text" class="validate" name="nombre" id="nombre"required>
+              <label for="rol"><strong>Nombre</strong></label>     
+          </div>
+          </div>
+                    <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s4">
+              <i class="material-icons prefix"> </i>
+                <?=crear_selectPresentacion("idPresentacion", "nombre", "Presentacion");?> 
+            </div>
+          </div>
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Paracetamol" type="text" class="validate" name="ingrediente" id="ingrediente" required>
+              <label for="rol"><strong>Ingrediente Activo</strong></label>     
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="file-field input-field">
+          <div class="input-field col s12 l12 left">
+
+
+              <button class="waves-effect waves-light btn right" type="submit" name="action">Registrar<i class="material-icons right">add</i></button>
+              <a  href="consultaMedicamento.php" class="waves-effect green lighten-3 btn right">Volver<i class="material-icons right">undo</i></a>
+    
+
+            </div>
+          </div>
+
+      </form>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>

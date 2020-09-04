@@ -1,0 +1,61 @@
+        <label for="rol"><strong>Tipo de sangre</strong></label>     
+        </div>
+        </div>
+        <!-- Elemento -->
+        <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="-" oninput="this.className = ''" name="nDisposicion" type="text" >
+              <label for="rol"><strong>No. Oficio Disposición</strong></label>     
+          </div>
+          </div>
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <textarea name="motivoI" type="text" rows="10" cols="30" placeholder="Se presentaron problemas donde la menor..." oninput="this.className = ''" name="situacionJ"></textarea>
+              <label for="rol"><strong>Motivo de ingreso</strong></label> 
+          </div>
+          </div>
+          <div class="file-field input-field">
+            <div class="input-field col s10">
+              <i class="material-icons prefix"> </i>
+              <textarea name="consideraciones" type="text" rows="10" cols="30" placeholder="Se muestra de una manera donde" oninput="this.className = ''" name="situacionJ"></textarea>
+              <label for="rol"><strong>Consideraciones Generales</strong></label> 
+          </div>
+          <div class="input-field col s2 l2 left">
+            <button class="waves-effect waves-light btn right" type="submit" name="action">Registrar
+              <i class="material-icons right">add</i>
+            </button>
+        </div>
+          </div>
+          
+        </div>
+  
+    </div>     
+        </div>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  <script>
+   $(document).ready(function () {
+      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({ fullWidth: true , noWrap: true});
+      $('.slide-prev').click(function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $('.carousel').carousel('prev')
+      });
+      $('.slide-next').click(function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $('.carousel').carousel('next')
+      });
+   
+  });
+    </script>

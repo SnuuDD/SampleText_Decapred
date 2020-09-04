@@ -1,0 +1,93 @@
+<!-- One "tab" for each step in the form: -->
+<div  class="teal lighten-5" >
+  <div class="tab">
+    <h4>Escuela</h4>
+    <div class='row'>
+      <div class="file-field input-field">
+        <div class="input-field col s12">
+          <i class="material-icons prefix"> </i>
+
+          <?=crear_selectR("idEscuela", "nombre", "Escuela",$escuela_id);?> 
+        </div>
+      </div>
+          <!--Element-->
+      <br>
+      <div id= "escuelaForm">
+      </div>
+    </div>
+  </div>
+
+  <div class="tab">
+    <h4>Plan educativo</h4>
+    <div class='row'>
+          <!--Element-->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <?=crear_selectR("idGradoEscolar", "nombre", "GradoEscolar",$gradoEscolar_id);?>
+            </div>
+          </div>
+              <!--Element-->
+          <br>
+          <div id= "planEducativoForm">
+          </div>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="row">
+      <!--Elemento-->
+      <h4>Fechas de los estudios</h4>
+      <div class="file-field input-field">
+        <div class="input-field col s6">
+          <?=fechaCamp("idEscolaridad","Escolaridad",$escolaridad_id,"fechaInicio","inicio") ;?>
+             
+        </div>
+        <div class="input-field col s6">
+          
+          <?=fechaCamp("idEscolaridad","Escolaridad",$escolaridad_id,"fechaFin", "fin");?>     
+        </div>
+      </div>
+      <br>
+      <br>
+      <h4>Datos tutor</h4>
+      <div class="col s12">
+        <!-- Elemento -->
+        <div class="file-field input-field">
+          <div class="input-field col s12">
+            <?=textAreaG("idEscolaridad","Escolaridad",$escolaridad_id,"nombreTutor");?>     
+          </div>
+        </div>
+        <!-- Elemento -->
+        <div class="file-field input-field">
+          <div class="input-field col s6">
+            <?=emailCamp("idEscolaridad","Escolaridad",$escolaridad_id,"correoElectronico");?>        
+          </div>
+          <div class="input-field col s6">
+            <?=telefonoCamp("idEscolaridad","Escolaridad",$escolaridad_id,"telefono");?>     
+          </div>  
+        </div>
+        <!-- Elemento -->
+
+      </div>
+    </div>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <a type="button" id="volverBtn" href="consultaEscolaridad.php" class="waves-effect green lighten-3 btn ">Volver<i class="material-icons right">undo</i></a>
+      <button type="button" class="waves-effect green lighten-3 btn " id="prevBtn" onclick="nextPrev(-1)">Previo<i class='material-icons right'>arrow_back</i></button>
+      <button type="button" class="waves-effect waves-light btn " id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+</form>
+</div>
+</div>
+</div> 

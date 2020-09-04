@@ -1,0 +1,20 @@
+<?php if(isset($_SESSION["warning"])): ?>
+<?=$_SESSION["warning"] ?>
+    <?php unset($_SESSION["warning"])?>
+        <?php endif;?>
+
+            <?php if(isset($_SESSION["mensaje"])): ?>
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="card blue lighten-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><?=$_SESSION["mensaje"] ?></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <?php unset($_SESSION["mensaje"])?>
+                    <?php endif;?>
+

@@ -1,0 +1,106 @@
+
+<div class="card teal lighten-2">
+  <div class="card-content teal lighten-3">
+    <div class=" center" data-indicators="true">
+      
+        <form id="regForm" action="Controladores\Escolaridad\controladorAltaEscolaridad.php" method="post">
+          <!-- One "tab" for each step in the form: -->
+          <div  class="teal lighten-5" >
+          <div class="tab">
+            <h4>Escuela</h4>
+            <div class='row'>
+              <div class="file-field input-field">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix"> </i>
+                  <?=crear_selectR("idEscuela", "nombre", "Escuela");?> 
+                </div>
+              </div>
+              
+              <div id= "escuelaForm">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab">
+            <h4>Plan educativo</h4>
+            <div class='row'>
+              <div class="col s12">
+                <!--Element-->
+                <div class="file-field input-field">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix"> </i>
+                    <?=crear_selectR("idGradoEscolar", "nombre", "GradoEscolar");?>
+                  </div>
+                </div>
+                  <!--Element-->
+                <div id= "planEducativoForm">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div class="row">
+              <!--Elemento-->
+              <h4>Fechas de los estudios</h4>
+              <div class="file-field input-field">
+                <div class="input-field col s6">
+                  <input type="date" name="fechaInicio" id="fechaInicio">
+                  <label for="rol"><strong>Fecha de ingreso:</strong></label>     
+                </div>
+                <div class="input-field col s6">
+                  <input type="date" name="fechaFin" id="fechaFin">
+                  <label for="rol"><strong>Fecha de salida:</strong></label>     
+                </div>
+              </div>
+              <br>
+              <br>
+              <h4>Datos tutor</h4>
+              <div class="col s12">
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"></i>
+                      <input id="icon_prefix" type="text" class="validate" name="tutorNombre" id="tutorNombre">
+                      <label for="icon_prefix">Nombre</label>
+                    </div>
+                  </div>
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix"> </i>
+                      <input id="email" type="email" class="validate" name="tutorEmail" id="tutorEmail">
+                      <label for="email">Email</label>   
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix"></i>
+                      <input id="icon_telephone" type="tel" class="validate" name="tutorTelefono" id="tutorTelefono">
+                      <label for="icon_telephone">Telephone</label>
+                    </div>  
+                  </div>
+                  <!-- Elemento -->
+          
+                </div>
+            </div>
+          </div>
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <a type="button" id="volverBtn" href="consultaEscolaridad.php" class="waves-effect green lighten-3 btn ">Volver<i class="material-icons right">undo</i></a>
+              <button type="button" class="waves-effect green lighten-3 btn " id="prevBtn" onclick="nextPrev(-1)">Previo<i class='material-icons right'>arrow_back</i></button>
+              <button type="button" class="waves-effect waves-light btn " id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+            </div>
+          </div>
+
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+
+        </form>
+    </div>
+  </div>
+</div> 
+
+

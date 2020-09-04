@@ -1,0 +1,138 @@
+<?php if (!(isset($_SESSION))):?>
+<?php session_start(); ?>
+<?php endif;?> 
+<div class="col s1">
+<ul class="sidenav sidenav-fixed invesible-top teal darken-3" id="mobile-nav">
+    <li>
+        <ul class="collapsible expandable white-text">
+          <?php if(($_SESSION["Consultar usuarios del sistema"])==1 or ($_SESSION["Consultar roles de usuario del sistema"])==1 ): ?>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i>Usuarios</div>
+            <?php if(($_SESSION["Consultar usuarios del sistema"])==1): ?>
+            <div class="collapsible-body teal darken-4 center"><a href="usuarios.php" class="white-text">Consultar Usuarios</a></div>
+            <?php endif;?> 
+            <?php if(($_SESSION["Consultar roles de usuario del sistema"])==1 ): ?>
+            <div class="collapsible-body teal darken-4 center"><a href="consultarRolesUsuario.php" class="white-text">Consultar los roles de los usuarios</a></div>
+            <?php endif;?> 
+            <li><div class="divider"></div></li>
+          </li>
+          <?php endif;?>  
+          <?php if(($_SESSION["Consultar roles"])==1 or ($_SESSION["Consultar privilegios de los roles"])==1 ): ?>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i>Roles</div>
+            <?php if(($_SESSION["Consultar roles"])==1  ): ?>
+            <div class="collapsible-body teal darken-4 center"><a href="consultarRoles.php" class="white-text">Consultar Roles</a></div>
+            <?php endif;?>
+            <?php if(($_SESSION["Consultar privilegios de los roles"])==1 ): ?>
+            <div class="collapsible-body teal darken-4 center"><a href="consultarRolesPrivilegios.php" class="white-text">Consultar los privilegios de los roles</a></div>
+            <?php endif;?>
+            <li><div class="divider"></div></li>
+          </li>
+          <?php endif;?>
+          <?php if(($_SESSION["Consultar privilegios"])==1): ?>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i>Privilegios</div>
+            <div class="collapsible-body teal darken-4 center"><a href="consultarPrivilegios.php" class="white-text">Consultar Privilegios</a></div>
+            <li><div class="divider"></div></li>
+          </li>
+          <?php endif;?>  
+             
+          <?php if(($_SESSION["Consulta de beneficiarias"]==1) ): ?>     
+        <li>
+          <div class="collapsible-header"><i class="material-icons">insert_drive_file</i>Expedientes</div>
+          <div class="collapsible-body teal darken-4 center"><a href="expedientes.php" class="white-text">Expedientes</a></div>
+          
+          <li><div class="divider"></div></li>
+        </li>
+        <?php endif;?> 
+        <?php if(($_SESSION["Consultar medicamentos"]==1) or ($_SESSION["Consultar discapacidades"]==1) ): ?> 
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_hospital</i>Clínica</div>
+          <?php if(($_SESSION["Consultar medicamentos"]==1)  ): ?> 
+          <div class="collapsible-body teal darken-4 center">
+              <a href="consultaMedicamento.php" class="white-text">Consultar Medicamentos</a>
+         </div>
+         <?php endif;?> 
+         <?php if(($_SESSION["Consultar discapacidades"]==1) ): ?> 
+         <div class="collapsible-body teal darken-4 center">
+          <a href="consultaDiscapacidad.php" class="white-text">Consultar Discapacidad</a>
+         </div>
+         <?php endif;?> 
+        </li>
+        <li><div class="divider"></div></li>
+        <?php endif;?> 
+
+
+
+        <?php if(($_SESSION["Consultar programas de atención"]==1) ): ?> 
+        <li>
+          <div class="collapsible-header"><i class="material-icons">my_location</i>Programas de Atención</div>
+          <div class="collapsible-body teal darken-4 center">
+            <a href="consultaPrograma.php" class="white-text">Consultar Programas de atención</a> 
+           </div>
+        </li>
+        <li><div class="divider"></div></li>
+        
+        <?php endif;?> 
+        
+        <?php if(($_SESSION["Consultar áreas"]==1) or ($_SESSION["Consultar especialidades"]==1)): ?> 
+        <li>
+            <div class="collapsible-header"><i class="material-icons">map</i>Áreas</div>
+            <?php if(($_SESSION["Consultar áreas"]==1) ): ?> 
+            <div class="collapsible-body teal darken-4 center">
+                <a href="consultaCoordinaciones.php" class="white-text">Consultar Área</a>  
+            </div>
+            <?php endif;?>
+            <?php if(($_SESSION["Consultar especialidades"]==1) ): ?> 
+            <div class="collapsible-body teal darken-4 center">
+              <a href="consultaEspecialidad.php" class="white-text">Consultar Especialidades</a>  
+          </div>
+          <?php endif;?>
+
+        </li>
+        <li><div class="divider"></div></li>
+        <?php endif;?> 
+        <?php if(($_SESSION["Consultar escuelas"]==1) or ($_SESSION["Consultar plan educativos"]==1)): ?> 
+        <li>
+          <div class="collapsible-header"><i class="material-icons">event_seat</i>Educación</div>
+          <?php if(($_SESSION["Consultar escuelas"]==1) ): ?>
+          <div class="collapsible-body teal darken-4 center">
+              <a href="consultaEscuela.php" class="white-text">Consulta Escuelas</a>
+          </div>
+          <?php endif;?>
+          <?php if(($_SESSION["Consultar plan educativos"]==1) ): ?>
+          <div class="collapsible-body teal darken-4 center">
+            <a href="consultaGradoEscolar.php" class="white-text">Plan Educativos</a>
+          </div>
+          <?php endif;?>
+        </li>
+        <li><div class="divider"></div></li>  
+        <?php endif;?> 
+        <?php if(($_SESSION["Consultar directorio"]==1) or ($_SESSION["Consultar instituciones"]==1) ): ?> 
+        <li>
+          <div class="collapsible-header"><i class="material-icons">accessibility</i>Directorio</div>
+          <?php if(($_SESSION["Consultar directorio"]==1) ): ?> 
+            <div class="collapsible-body teal darken-4 center">
+              <a href="consultaCanalizador.php" class="white-text">Consulta de Directorio</a>
+            </div>
+            <?php endif;?> 
+          <?php if(($_SESSION["Consultar instituciones"]==1) ): ?> 
+            <div class="collapsible-body teal darken-4 center">
+              <a href="consultaInstitucion.php" class="white-text">Consulta de Instituciones</a>
+
+            </div>  
+          <?php endif;?>    
+        </li>
+        <li><div class="divider"></div></li>
+        <?php endif;?> 
+        
+      </ul>
+  </ul>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+    });
+  </script>
+
+</div>

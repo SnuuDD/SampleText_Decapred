@@ -1,0 +1,208 @@
+
+    
+        
+        
+<div class="card teal lighten-2">
+  <div class="card-content teal lighten-3">
+    <div class=" center" data-indicators="true">
+        <form id="regForm" action="Controladores\Expediente\controladorAltaExpediente.php" method="post">
+          <div  class="teal lighten-5" >
+
+            <div class="tab">
+              <h4>Datos de la beneficiaria</h4>
+              <div class='row'>
+                  <div class="col s12">
+                    <!-- Elemento -->
+                    <div class="file-field input-field">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix"> </i>
+                        <input type="date" name="fecha">
+                        <label for="rol"><strong>Fecha de ingreso:</strong></label>     
+                      </div>
+                    </div>
+                    <!-- Elemento -->
+                    <div class="file-field input-field">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix"> </i>
+                        <input type="time" name="hora">
+                        <label for="rol"><strong>Hora de ingreso</strong></label>     
+                      </div>
+                    </div>
+                    <!-- Elemento -->
+                    <div class="file-field input-field">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix"> </i>
+                        <input placeholder="Maria" type="text"  name="nombre">
+                        <label for="rol"><strong>Nombre</strong></label>     
+                      </div>
+                    </div>
+                    <!-- Elemento -->
+                    <div class="file-field input-field">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix"> </i>
+                        <input placeholder="Garcia" type="text"  name="apellidoPaterno">
+                        <label for="rol"><strong>Apellido Paterno</strong></label>     
+                    </div>
+                    </div>
+                    <!-- Elemento -->
+                    <div class="file-field input-field">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix"> </i>
+                        <input placeholder="Perez" type="text"  name="apellidoMaterno">
+                        <label for="rol"><strong>Apellido Materno</strong></label>     
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab">
+              <h4>Datos de la beneficiaria</h4>
+              <div class='row'>
+                <div class="col s12">
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <input type="date" oninput="this.className = ''" name="fechaN">
+                      <label class="formato2" for="rol"><strong>Fecha de nacimiento:</strong></label>     
+                  </div>
+                  </div>
+          
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      
+                      <?php echo selectEstados("");?>
+                      
+                      <label for="rol"><strong>Estado</strong></label>     
+                  </div>
+                  </div>
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <input placeholder="Huatabampo" oninput="this.className = ''" name="ciudad" type="text" >
+                      <label class="formato2" for="rol"><strong>Ciudad</strong></label>     
+                  </div>
+                  </div>
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <input placeholder="SAGR980910HSRNLL19"  oninput="this.className = ''" name="curp" type="text" >
+                      <label for="rol"><strong>CURP</strong></label>     
+                  </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="tab">
+              <h4>Canalizador</h4>
+              <div class="row">
+                <div class="col s12">
+                  <div id="datoscanalizador" class="col s12">
+                    <?php echo selectCanalizadores("");?>
+                  <a  title="Agregar nuevo canalizador" id="agregarcanalizador" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+                  </div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="tab">
+              <h4>Datos de la beneficiaria</h4>
+              <div class="col s12">
+                <!-- Elemento -->
+                <div class="file-field input-field">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix"> </i>
+                    <input placeholder="-" oninput="this.className = ''" name="nExpediente" type="text">
+                    <label for="rol"><strong>Número de expediente y/o carpeta de investiación</strong></label>     
+                  </div>
+                </div>
+                <!-- Elemento -->
+                <div class="file-field input-field">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix"> </i>
+                    <select name="hermanos" id="">
+                      <option value="" selected>Seleccione (Sí/No)</option>
+                      <option value="1">Sí</option>
+                      <option value="0">No</option>
+                    </select>
+                    <label for="rol"><strong>Ingreso con hermanos</strong></label>     
+                  </div>
+                </div>
+                <div class="file-field input-field">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix"> </i>
+                    
+                    <?php echo selectSangre();?>
+          
+                    <label for="rol"><strong>Tipo de sangre</strong></label>     
+                  </div>
+                </div>
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <input placeholder="-" oninput="this.className = ''" name="nDisposicion" type="text" >
+                      <label for="rol"><strong>No. Oficio Disposición</strong></label>     
+                    </div>
+                  </div>
+                  
+                </div>
+
+              <div class="row">
+              </div>
+            </div>
+
+            <div class="tab">
+              <h4>Datos de la beneficiaria</h4>
+              <div class="row">
+                <div class="col s12">
+                  <!-- Elemento -->
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <textarea name="motivoI" type="text" class="materialize-textarea" placeholder="Se presentaron problemas donde la menor..." oninput="this.className = ''" name="situacionJ"></textarea>
+                      <label for="rol"><strong>Motivo de ingreso</strong></label> 
+                    </div>
+                  </div>
+                  <div class="file-field input-field">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix"> </i>
+                      <textarea name="consideraciones" type="text" class="materialize-textarea" placeholder="Se muestra de una manera donde" oninput="this.className = ''" name="situacionJ"></textarea>
+                      <label for="rol"><strong>Consideraciones Generales</strong></label> 
+                    </div>
+      
+                  </div>
+            </div>
+              </div>
+            </div>
+
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <a type="button" id="volverBtn" href="expedientes.php" class="waves-effect green lighten-3 btn ">Volver<i class="material-icons right">undo</i></a>
+                <button type="button" class="waves-effect green lighten-3 btn " id="prevBtn" onclick="nextPrev(-1)">Previo<i class='material-icons right'>arrow_back</i></button>
+                <button type="button" class="waves-effect waves-light btn " id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+              </div>
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div> 
+  

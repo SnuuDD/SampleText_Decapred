@@ -1,0 +1,41 @@
+<br>
+<div class="card teal lighten-2">
+<div class="card-content teal lighten-3">
+<div class="carousel carousel-slider center" data-indicators="true">
+
+  <div class="carousel-item teal lighten-5 " href="#one!">
+      <h2>Modificar Medicamento</h2>
+    <div class="col s12 align-center">
+      <form action="Controladores\Medicamento\controladorModificarMedicamento.php" method="POST">
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Paracetamol" type="text" class="validate" name="nombre" id="nombre"required>
+              <label for="rol"><strong>Nombre</strong></label>     
+          </div>
+          </div>
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <input placeholder="Paracetamol" type="text" class="validate" name="ingrediente" id="ingrediente" required>
+              <label for="rol"><strong>Ingrediente Activo</strong></label>     
+            </div>
+          </div>
+          <!-- Elemento -->
+          <div class="file-field input-field">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"> </i>
+              <?=crear_select1("idPresentacion", "nombre", "presentacion");?> 
+            </div>
+          </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="input-field col s12 l12 left">
+            <input class="btn" type="submit" value="Actualizar" name="Actualizar">
+            </div>
+          </div>  
+      </form>
+      </div>
+  </div>

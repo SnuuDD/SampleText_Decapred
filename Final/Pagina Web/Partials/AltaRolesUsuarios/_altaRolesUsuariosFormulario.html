@@ -1,0 +1,44 @@
+
+
+
+<br>
+<div class="card teal lighten-2">
+<div class="card-content teal lighten-3">
+<div class="center" data-indicators="true">
+  <div class=" teal lighten-5 " href="#one!">
+      <div class="row">
+    <div class="col s12 align-center">
+      <form action="Controladores\RolesUsuarios\controladorAltaRolesUsuarios.php" method="post">
+        <!--Elemento-->
+        <div class="row">
+
+        <div class="file-field input-field">
+          <div class="input-field col s8">
+            <?=crear_selectR("idUser", "nombre", "Usuario","","0");?>
+          </div>
+          <div class="input-field col s4">
+            <?=crear_selectR("idRol", "nombre", "Rol","","0");?>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <!-- Elemento -->
+        <div class="file-field input-field">
+          <div class="input-field col s12 l12 left">
+            <button  id="test" class="waves-effect waves-light btn right" type="submit" name="action">Registrar
+              <i class="material-icons right">add</i>
+            </button>
+            <a id="" href="consultarRolesUsuario.php" class="waves-effect green lighten-3 btn right">Volver<i class="material-icons right">undo</i>
+            </a>
+            
+        </div>
+        </div>
+      </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
